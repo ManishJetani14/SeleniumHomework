@@ -18,7 +18,7 @@ public class SoftwarePage extends Utils
         int count = 0, noButton = 0;
         //getting list of item box
         for (WebElement element : webElementList)
-        {
+        {   //applying condition
             if (element.findElements(_addToCartButtonField).size() == 1)
             {
                 count++;
