@@ -12,8 +12,6 @@ public class BaseTest extends Utils
     {  //open the browser
        browserSelector.openSelectedBrowser();
 
-       //open URL
-       driver.get("https://demo.nopcommerce.com/");
     }
     @AfterMethod
     public void closeBrowser(ITestResult result)
@@ -23,6 +21,6 @@ public class BaseTest extends Utils
             captureScreenshot(result.getName());
         }
         //close the browser after test
-      driver.quit();
+        driver.quit();
        }
 }

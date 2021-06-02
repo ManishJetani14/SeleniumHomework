@@ -34,12 +34,14 @@ public class BrowserSelector extends BasePage
         }
         else
         {
-            System.out.println("In correct browser name :" +browserName);
+            System.out.println("Incorrect browser name :" +browserName);
         }
         //maximising browser window
         driver.manage().window().maximize();
         //applying implicitly wait to driver object
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        //open URL
+        driver.get("https://demo.nopcommerce.com/");
 
     }
 
